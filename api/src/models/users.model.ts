@@ -1,7 +1,7 @@
 import {Entity, model, property, hasOne} from '@loopback/repository';
 import {AccountStatus} from './account-status.model';
 
-@model({settings: {strict: false}})
+@model({settings: {strict: true}})
 export class Users extends Entity {
   @property({
     type: 'number',
